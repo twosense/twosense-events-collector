@@ -2,7 +2,14 @@
 
 This is a simple script that collects events from the Twosense API and stores them in `.json` file.
 The next time it runs, it will only collect new events.
+
+## Requirements
+
+- Python 3.11+
+- A Twosense API client id and client secret
+
 ## Setup
+
 ```bash
     python -m venv venv
     source venv/bin/activate
