@@ -105,7 +105,7 @@ def save_events(events: list[dict]) -> None:
     logging.info(f"Events saved to {LOG_FILE}")
 
 
-def read_state() -> dict | None:
+def read_state() -> dict:
     """
     Get the time of the last event downloaded from the log file.
 
@@ -118,7 +118,7 @@ def read_state() -> dict | None:
         return json.load(file)
 
 
-def is_valid(api_token: str):
+def is_valid(api_token: str) -> bool:
     if not api_token:
         logging.warning("No API token found")
         return False
