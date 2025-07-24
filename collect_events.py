@@ -149,7 +149,7 @@ def refresh_api_token():
     headers = {"content-type": "application/json"}
 
     response = requests.post(
-        "https://auth.twosense.ai/oauth/token", data=payload, headers=headers
+        "https://webapi.twosense.ai/oauth/token", data=payload, headers=headers
     )
     response.raise_for_status()
 
